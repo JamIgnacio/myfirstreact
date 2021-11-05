@@ -1,4 +1,4 @@
-function Message(){
+const Message = () =>{
     return <p>Borahae! 💜</p>
 }
 

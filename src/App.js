@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
 import Message from './components/Message';
+import Button from './components/Button';
 
 function App() {
   return (
@@ -13,15 +14,15 @@ function App() {
         </p>
         <Greet name = "Jungkook" stageName = "JK">
           <p>Birthday is on September 1st.</p>
-          <Message/>
+          <Message/><Button/>
           </Greet>
         <Greet name = "Jimin" stageName = "JM">
           <p>Birthday is on October 13th.</p>
-          <Message/>
+          <Message/><Button/>
           </Greet>
         <Greet name = "Namjoon" stageName = "RM">
           <p>Birthday is on September 12th.</p>
-          <Message/>
+          <Message/><Button/>
           </Greet>
         <a
           className="App-link"
