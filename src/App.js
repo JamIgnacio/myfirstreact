@@ -5,6 +5,7 @@ import Message from './components/Message';
 import Button from './components/Button';
 import helloServices from './services/helloServices';
 import Hello from './components/Hello';
+import Employee from './components/Employee';
 
 function App() {
   return (
@@ -12,28 +13,22 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload. --- jammy 😊
+           --- jammy 😊
         </p>
         <p>{Hello()}</p>
-        <Greet name = "Jungkook" stageName = "JK">
-          <p>Birthday is on September 1st.</p>
+        <Employee/>
+        <Greet name = "stranger" stageName = "😊">
+          <p>Hello, Welcome back to my yt channel! Char.</p>
           <Message/><Button/>
           </Greet>
-        <Greet name = "Jimin" stageName = "JM">
-          <p>Birthday is on October 13th.</p>
-          <Message/><Button/>
-          </Greet>
-        <Greet name = "Namjoon" stageName = "RM">
-          <p>Birthday is on September 12th.</p>
-          <Message/><Button/>
-          </Greet>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          
         </a>
       </header>
     </div>
