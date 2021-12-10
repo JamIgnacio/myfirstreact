@@ -1,5 +1,5 @@
 const Message = () =>{
-    return <p>Borahae! 💜</p>
+    return <p>🤍🤍🤍</p>
 }
 
 export default Message
