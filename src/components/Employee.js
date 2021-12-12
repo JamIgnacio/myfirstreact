@@ -8,19 +8,38 @@ const Employee = () =>{
 
     useEffect(
         () =>{
-            employeeService.getEmployees()
+            refreshEmployeeTable();
+        }
+    )
+
+    const refreshEmployeeTable = () =>{
+        employeeService.getEmployees()
             .then(
                 response =>{
                     setEmployees(response.data)
                 }
             )
             .catch(
-                () =>{
-                    console.log("An Error Occured.")
+                error =>{
+                    console.error("An Error Occured.", error)
                 }
             )
-        }
-    )
+    }
+
+    const deleteEmployee = (employeeId) =>{
+        employeeService.deleteEmployee(employeeId)
+        .then(
+            response =>{
+                console.log("Succesfully deleted employee!")
+                refreshEmployeeTable();
+            }
+        )
+        .catch(
+            error =>{
+                console.error("Something went wrong!", error)
+            }
+        )
+    }
 
     return(
         <div className="container">
@@ -44,7 +63,10 @@ const Employee = () =>{
                                     <td>{employee.location}</td>
                                     <td>{employee.department}</td>
                                     <td>
-                                        <Link className= "btn btn-primary" to={`/edit/${employee.employeeId}`}>Update</Link>
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                            <Link className= "btn btn-primary" to={`/edit/${employee.employeeId}`}>Update</Link>
+                                            <button className= "btn btn-danger" onClick={() =>deleteEmployee(employee.employeeId)}>Delete</button>
+                                        </div>
                                     </td>
                                 </tr>
                             )

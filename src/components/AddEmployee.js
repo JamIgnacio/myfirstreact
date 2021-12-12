@@ -72,7 +72,7 @@ const AddEmployee =() =>{
 
     return (
         <div className="container">
-            <h1>Add Employee</h1>
+            <h1>Add/Edit Employee</h1>
                 <form>
                     <div className="mb-3">
                         <label for="name" className="form-label">Name</label>
