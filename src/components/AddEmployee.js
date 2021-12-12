@@ -79,6 +79,7 @@ const AddEmployee =() =>{
                         <input 
                         type="text" 
                         className="form-control" 
+                        value={name}
                         id="name"
                         placeholder="Add employee name"
                         onChange={
@@ -92,6 +93,7 @@ const AddEmployee =() =>{
                         <input 
                         type="text" 
                         className="form-control" 
+                        value={location}
                         id="location"
                         placeholder="Add employee location"
                         onChange={
@@ -104,7 +106,8 @@ const AddEmployee =() =>{
                         <label for="department" className="form-label">Department</label>
                         <input 
                         type="text" 
-                        className="form-control" 
+                        className="form-control"
+                        value={department} 
                         id="department"
                         placeholder="Add employee department"
                         onChange={
