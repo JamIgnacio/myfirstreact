@@ -12,7 +12,7 @@ function Home() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>{Hello()}</p>
         <Greet name = "stranger" stageName = "😜">
-          <p>Hope you're having a nice day!</p>
+          <p>Look at me, and know that I am by your side.</p>
           <Message/>
           <p>
            --- jammy 😊
