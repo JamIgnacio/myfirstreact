@@ -116,7 +116,7 @@ const AddEmployee =() =>{
                             }
                         }/>
                     </div>
-                    <button type="submit" className="btn btn-primary" onClick={(e) => saveEmployee(e)}>Save</button>
+                    <button type="submit" className="btn btn-info" onClick={(e) => saveEmployee(e)}>Save</button>
                 </form>
         </div>
     )

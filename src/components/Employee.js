@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import employeeService from "../services/employeeService"
-
+import '../App.css';
 
 const Employee = () =>{
     const[employees, setEmployees] = useState([])
@@ -45,9 +45,9 @@ const Employee = () =>{
         <div className="container">
             <h3>List of Employees</h3>
             <div>
-                <table className="table table-hover table-light table-bordered border-dark">
+                <table className="table table-hover table-light table-bordered border-dark table align-middle">
                     <thead>
-                        <tr className="table-danger table-bordered border-dark">
+                        <tr className="table-info table-bordered border-dark">
                             <td>Name</td>
                             <td>Location</td>
                             <td>Department</td>
